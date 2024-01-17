@@ -4,4 +4,4 @@ def square_matrix_simple(matrix=[]):
     if len(matrix) == 0:
         return squared_list
     squared_list = [[j * j for j in i] for i in matrix]
-    return(squared_list)
+    return squared_list
