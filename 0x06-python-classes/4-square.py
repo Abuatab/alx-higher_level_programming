@@ -6,7 +6,7 @@ class Square:
     ''' A class for representing a square '''
     def __init__(self, size=0):
         ''' Initializes a new square '''
-        self.__size = size
+        self.size = size
 
     def area(self):
             return self.__size * self.__size
