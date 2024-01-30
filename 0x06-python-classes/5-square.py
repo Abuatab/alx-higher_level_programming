@@ -9,9 +9,11 @@ class Square:
         self.__size = size
 
     def area(self):
+        """ computes the area of the square """
         return self.__size * self.__size
 
     def my_print(self):
+        """ print the square as a grid of # symbols"""
         if self.__size == 0:
             print()
             return None
