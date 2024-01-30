@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-''' A square class '''
+""" A square class """
 
 
 class Square:
-    ''' A class for representing a square '''
+    """ A class for representing a square """
     def __init__(self, size=0):
-        ''' Initializes a new square '''
-        self.size = size
+        """ Initializes a new square """
+        self.__size = size
 
     def area(self):
         """ computes the area of the square """
