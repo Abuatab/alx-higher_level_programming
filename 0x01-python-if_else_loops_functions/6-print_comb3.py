@@ -5,6 +5,7 @@ def all_combs():
             if i == j or i > j:
                 continue
             if i == 8 and j == 9:
-                print("{}{}".format(i, j))
-                break
-            print("{}{}".format(i, j), end=", ")
+                print("{}{}".format(str(i), str(j)))
+                return
+            print("{}{}".format(str(i), str(j)), end=", ")
+all_combs()
