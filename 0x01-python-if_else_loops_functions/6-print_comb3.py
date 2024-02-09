@@ -8,5 +8,3 @@ def all_combs():
                 print("{}{}".format(i, j))
                 return
             print("{}{}".format(i, j), end=", ")
-
-all_combs()
