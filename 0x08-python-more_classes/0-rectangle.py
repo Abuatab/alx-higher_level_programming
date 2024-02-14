@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-""" An empty square class """
+""" An empty Rectangle class """
 
 
-class Square:
-    """ Represents a square """
+class Rectangle:
+    """ Represents a Rectangle """
 
     pass
