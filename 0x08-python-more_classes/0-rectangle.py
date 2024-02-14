@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-''' An empty square class '''
+""" An empty square class """
 
 
 class Square:
-    ''' Represents a square '''
+    """ Represents a square """
 
     pass
