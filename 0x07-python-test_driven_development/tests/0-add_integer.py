@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A function that adds two numbers
+    A function that adds two numbers
 """
 
 
