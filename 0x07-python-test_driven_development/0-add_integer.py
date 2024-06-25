@@ -3,12 +3,17 @@
 
 
 def add_integer(a, b=98):
-    """ Adds two integer and/or float numbers
-    floats are typecasted to ints before addition
-    Returns:
-        The sum of a and b
+    """Adds two integers.
+
+    Args:
+        a: the first integer.
+        b: the second integer, default 98.
+
     Raises:
-        TypeError: If a or b aren't integer and/or float
+        TypeError: if a, b are not int, float.
+
+    Returns:
+        The sum of the two integers.
     """
 
     if not isinstance(a, int) and not isinstance(a, float):
@@ -20,4 +25,4 @@ def add_integer(a, b=98):
 
 if __name__ == "__main__":
     import doctest
-    doctest.testfile("tests/0-add_integer.txt")
+    doctest.testmode()
