@@ -1,0 +1,60 @@
+"""
+The ``text_indentation`` module
+===============================
+
+Using ``text_indentation``
+--------------------------
+
+Import module:
+    >>> text_indentation = __import__('text_indentation').text_indentation
+
+Test normal usage:
+    >>> text_indentation("Hello. How are you? I am fine.")
+    Hello.
+
+    How are you?
+
+    I am fine.
+
+Test with multiple spaces:
+    >>> text_indentation("Hello.  How are you?   I am fine.")
+    Hello.
+
+    How are you?
+
+    I am fine.
+
+Test with colon:
+    >>> text_indentation("Hello: how are you?")
+    Hello:
+
+    how are you?
+
+Test with no special characters:
+    >>> text_indentation("Hello how are you")
+    Hello how are you
+
+Test with empty string:
+    >>> text_indentation("")
+    
+Test with non-string input:
+    >>> text_indentation(12345)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+Test with spaces only:
+    >>> text_indentation(" ")
+    <BLANKLINE>
+
+Test with spaces and special characters:
+    >>> text_indentation(" . ? : ")
+    <BLANKLINE>
+
+    <BLANKLINE>
+
+    <BLANKLINE>
+
+    <BLANKLINE>
+"""
+
