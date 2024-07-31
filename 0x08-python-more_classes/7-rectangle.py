@@ -6,9 +6,11 @@ class Rectangle:
     """A rectangle representation
     Attributes:
         number_of_instances (int): The number of Rectangle instances.
+        print_symbol (any): The character to represent the rectangle.
     """
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """Initializes a new rectangle.
@@ -67,7 +69,7 @@ class Rectangle:
         rec_str = ""
         for i in range(self.__height):
             for j in range(self.__width):
-                rec_str = rec_str + "#"
+                rec_str = rec_str + self.print_symbol
             if i == self.__height - 1:
                 break
             rec_str = rec_str + "\n"
