@@ -61,7 +61,7 @@ class Rectangle:
     def __str__(self):
         """Return the printable representation of the Rectangle.
 
-        Represents the rectangle with the # character.
+        Represents the rectangle with the # character by default.
         """
         if (self.__width == 0) or (self.__height == 0):
             return ""
@@ -69,7 +69,7 @@ class Rectangle:
         rec_str = ""
         for i in range(self.__height):
             for j in range(self.__width):
-                rec_str = rec_str + self.print_symbol
+                rec_str = rec_str + str(self.print_symbol)
             if i == self.__height - 1:
                 break
             rec_str = rec_str + "\n"
@@ -78,7 +78,7 @@ class Rectangle:
     def __repr__(self):
         """ returns a string representation of the rectangle
         to be able to recreate a new instance by using eval()"""
-        return "(Rectangle({}, {}))".format(self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
         """Print a message and decrement num of instances"""

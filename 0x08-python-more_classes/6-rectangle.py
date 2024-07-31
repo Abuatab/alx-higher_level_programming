@@ -76,7 +76,7 @@ class Rectangle:
     def __repr__(self):
         """ returns a string representation of the rectangle
         to be able to recreate a new instance by using eval()"""
-        return "(Rectangle({}, {}))".format(self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
         """Print a message and decrement num of instances"""
