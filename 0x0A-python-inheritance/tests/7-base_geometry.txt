@@ -1,0 +1,44 @@
+Test for BaseGeometry
+-------------------------------------------
+
+case 0: import
+>>> BaseGeometry = __import__('your_script_name').BaseGeometry
+>>>
+-------------------------------------------
+
+case 1: area method not implemented
+
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented
+>>>
+-------------------------------------------
+
+case 2: integer_validator with valid input
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 10)
+>>>
+-------------------------------------------
+
+case 3: integer_validator with non-integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", "ten")
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+>>>
+-------------------------------------------
+
+case 4: integer_validator with non-positive integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", -5)
+Traceback (most recent call last):
+    ...
+ValueError: age must be greater than 0
+>>>
+
