@@ -1,5 +1,5 @@
-The ``7-base_geometry`` module
-==============================
+Test for BaseGeometry
+---------------------
 
 Using ``BaseGeometry``
 ----------------------
