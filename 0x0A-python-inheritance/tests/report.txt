@@ -1,50 +1,162 @@
 Trying:
     BaseGeometry = __import__('7-base_geometry').BaseGeometry
 Expecting nothing
-ok
+**********************************************************************
+File "7-base_geometry.txt", line 5, in 7-base_geometry.txt
+Failed example:
+    BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.11/doctest.py", line 1355, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 7-base_geometry.txt[0]>", line 1, in <module>
+        BaseGeometry = __import__('7-base_geometry').BaseGeometry
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ModuleNotFoundError: No module named '7-base_geometry'
 Trying:
     bg = BaseGeometry()
 Expecting nothing
-ok
+**********************************************************************
+File "7-base_geometry.txt", line 11, in 7-base_geometry.txt
+Failed example:
+    bg = BaseGeometry()
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.11/doctest.py", line 1355, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 7-base_geometry.txt[1]>", line 1, in <module>
+        bg = BaseGeometry()
+             ^^^^^^^^^^^^
+    NameError: name 'BaseGeometry' is not defined
 Trying:
     bg.area()
 Expecting:
     Traceback (most recent call last):
         ...
     Exception: area() is not implemented
-ok
+**********************************************************************
+File "7-base_geometry.txt", line 12, in 7-base_geometry.txt
+Failed example:
+    bg.area()
+Expected:
+    Traceback (most recent call last):
+        ...
+    Exception: area() is not implemented
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.11/doctest.py", line 1355, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 7-base_geometry.txt[2]>", line 1, in <module>
+        bg.area()
+        ^^
+    NameError: name 'bg' is not defined
 Trying:
     bg = BaseGeometry()
 Expecting nothing
-ok
+**********************************************************************
+File "7-base_geometry.txt", line 21, in 7-base_geometry.txt
+Failed example:
+    bg = BaseGeometry()
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.11/doctest.py", line 1355, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 7-base_geometry.txt[3]>", line 1, in <module>
+        bg = BaseGeometry()
+             ^^^^^^^^^^^^
+    NameError: name 'BaseGeometry' is not defined
 Trying:
     bg.integer_validator("age", 10)
 Expecting nothing
-ok
+**********************************************************************
+File "7-base_geometry.txt", line 22, in 7-base_geometry.txt
+Failed example:
+    bg.integer_validator("age", 10)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.11/doctest.py", line 1355, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 7-base_geometry.txt[4]>", line 1, in <module>
+        bg.integer_validator("age", 10)
+        ^^
+    NameError: name 'bg' is not defined
 Trying:
     bg = BaseGeometry()
 Expecting nothing
-ok
+**********************************************************************
+File "7-base_geometry.txt", line 28, in 7-base_geometry.txt
+Failed example:
+    bg = BaseGeometry()
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.11/doctest.py", line 1355, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 7-base_geometry.txt[5]>", line 1, in <module>
+        bg = BaseGeometry()
+             ^^^^^^^^^^^^
+    NameError: name 'BaseGeometry' is not defined
 Trying:
     bg.integer_validator("age", "ten")
 Expecting:
     Traceback (most recent call last):
         ...
     TypeError: age must be an integer
-ok
+**********************************************************************
+File "7-base_geometry.txt", line 29, in 7-base_geometry.txt
+Failed example:
+    bg.integer_validator("age", "ten")
+Expected:
+    Traceback (most recent call last):
+        ...
+    TypeError: age must be an integer
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.11/doctest.py", line 1355, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 7-base_geometry.txt[6]>", line 1, in <module>
+        bg.integer_validator("age", "ten")
+        ^^
+    NameError: name 'bg' is not defined
 Trying:
     bg = BaseGeometry()
 Expecting nothing
-ok
+**********************************************************************
+File "7-base_geometry.txt", line 38, in 7-base_geometry.txt
+Failed example:
+    bg = BaseGeometry()
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.11/doctest.py", line 1355, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 7-base_geometry.txt[7]>", line 1, in <module>
+        bg = BaseGeometry()
+             ^^^^^^^^^^^^
+    NameError: name 'BaseGeometry' is not defined
 Trying:
     bg.integer_validator("age", -5)
 Expecting:
     Traceback (most recent call last):
         ...
     ValueError: age must be greater than 0
-ok
-1 items passed all tests:
-   9 tests in 7-base_geometry.txt
+**********************************************************************
+File "7-base_geometry.txt", line 39, in 7-base_geometry.txt
+Failed example:
+    bg.integer_validator("age", -5)
+Expected:
+    Traceback (most recent call last):
+        ...
+    ValueError: age must be greater than 0
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.11/doctest.py", line 1355, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 7-base_geometry.txt[8]>", line 1, in <module>
+        bg.integer_validator("age", -5)
+        ^^
+    NameError: name 'bg' is not defined
+**********************************************************************
+1 items had failures:
+   9 of   9 in 7-base_geometry.txt
 9 tests in 1 items.
-9 passed and 0 failed.
-Test passed.
+0 passed and 9 failed.
+***Test Failed*** 9 failures.
