@@ -73,11 +73,12 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """Displays the rectangle with '#'"""
-        for i in range(self.height):
-            for j in range(self.width):
-                print("#", end="")
+        """Displays the rectangle with '#' taking into account x and y."""
+        for i in range(self.y):
             print()
+
+        for i in range(self.height):
+            print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         """Returns the str() representation of the Rectangle."""
