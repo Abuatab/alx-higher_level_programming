@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
@@ -79,6 +80,40 @@ class TestBase(unittest.TestCase):
         s1_dict = {'id': 2, 'size': 5, 'x': 1, 'y': 1}
         s1 = Square.create(**s1_dict)
         self.assertEqual(s1.to_dictionary(), s1_dict)
+
+    def setUp(self):
+        """Reset object count before each test."""
+        Base._Base__nb_objects = 0  # Reset the object count for consistency
+
+    def test_auto_assigned_id(self):
+        """Test Base object with automatically assigned ID."""
+        b1 = Base()
+        b2 = Base()
+        self.assertEqual(b1.id, 1)
+        self.assertEqual(b2.id, 2)
+
+    def test_auto_incrementing_id(self):
+        """Test that IDs are incremented automatically."""
+        b1 = Base()
+        b2 = Base()
+        b3 = Base()
+        self.assertEqual(b1.id, 1)
+        self.assertEqual(b2.id, 2)
+        self.assertEqual(b3.id, 3)
+
+    def test_custom_id(self):
+        """Test Base object with custom ID passed."""
+        b1 = Base(89)
+        self.assertEqual(b1.id, 89)
+
+    def test_mixed_ids(self):
+        """Test mix of automatic and custom ID assignments."""
+        b1 = Base()
+        b2 = Base(89)
+        b3 = Base()
+        self.assertEqual(b1.id, 1)
+        self.assertEqual(b2.id, 89)
+        self.assertEqual(b3.id, 2)
 
 
 if __name__ == '__main__':
