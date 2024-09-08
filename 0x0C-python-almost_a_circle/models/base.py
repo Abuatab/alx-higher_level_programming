@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """A script that defines a base class to manage other classes"""
-import jason
+import json
+
 
 class Base:
     """Manages all the classes to avoid duplication.
