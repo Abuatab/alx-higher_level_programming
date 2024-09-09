@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Unittest for square.py"""
+
 import unittest
 from models.square import Square
 
